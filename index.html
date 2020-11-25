@@ -2,10 +2,45 @@
 <html lang="en">
   <head>
     <title>Git workflow practice #1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+      }
+
+      h1 { 
+        background-color: teal;
+        color: white;
+        padding: 20px;
+        margin: 20px;
+      }
+      p {
+        background-color: rgb(235, 235, 235);
+        padding: 20px;
+        margin: 20px;
+      }
+
+      p.first {
+        flex-grow: 2;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1 style="background-color: blue; color: white;">Git Workflow Practice #1</h1>
-    <p>I'm concentrating this practice session on creating a git remote repository, cloning, adding, commiting changes, and pushing to github.</p>
+    <h1>Git Workflow Practice #1</h1>
+    <p class="first">I'm concentrating this practice session on creating a git remote repository, cloning, adding, commiting changes, and pushing to github.</p>
     <p>In this session, I'm also purposely creating merge conflicts to get used to resolving these issues.</p>
   </body>
 </html>
