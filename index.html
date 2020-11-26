@@ -10,6 +10,9 @@
 
       body {
         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      section {
         display: flex;
         align-items: flex-start;
         flex-wrap: nowrap;
@@ -32,15 +35,21 @@
       }
 
       @media (max-width: 768px) {
-        body {
+        section {
           flex-wrap: wrap;
         }
       }
     </style>
   </head>
   <body>
-    <h1>Git Workflow Practice #1</h1>
-    <p class="first">I'm concentrating this practice session on creating a <em>git</em> remote repository, cloning, adding, commiting changes, and pushing to github.</p>
-    <p>In this session, I'm also purposely creating merge conflicts to get used to resolving these issues.</p>
+    <section>
+      <h1>Git Workflow Practice #1</h1>
+      <p class="first">I'm concentrating this practice session on creating a <em>git</em> remote repository, cloning, adding, commiting changes, and pushing to github.</p>
+      <p>In this session, I'm also purposely creating merge conflicts to get used to resolving these issues.</p>
+    </section>
+    <section>
+      <p>I have also created a "style" branch when styling this page, and then merging to the master branch when finished.</p>
+      <p>I tried resetting to a previous commit as well using <em>git reset --hard (commit hash)</em></p>
+    </section>
   </body>
 </html>
